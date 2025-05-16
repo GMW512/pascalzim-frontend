@@ -2,13 +2,71 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Compilador Pascalzim</title>
+  <title>Pascalzim Online Compiler</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #00ff88;
+    }
+
+    textarea {
+      width: 80%;
+      max-width: 800px;
+      height: 200px;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      border: 1px solid #00ff88;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #00ff88;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00cc6a;
+    }
+
+    #saida {
+      margin-top: 30px;
+      width: 80%;
+      max-width: 800px;
+      background-color: #000000;
+      color: #00ff88;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #00ff88;
+      white-space: pre-wrap;
+      font-size: 1em;
+      min-height: 150px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Compilador Pascalzim Online</h1>
-  <textarea id="codigo" rows="10" cols="50">// Digite seu código Pascalzim aqui</textarea><br>
+  <h1>Pascalzim_Online_Compiler</h1>
+  <textarea id="codigo" placeholder="Digite seu código Pascalzim aqui..."></textarea><br>
   <button onclick="executarCodigo()">Executar</button>
-  <pre id="saida"></pre>
+  <pre id="saida">// A saída do código aparecerá aqui</pre>
 
   <script src="script.js"></script>
 </body>
