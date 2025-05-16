@@ -1,6 +1,6 @@
 async function executarCodigo() {
     const codigo = document.getElementById('codigo').value;
-    const resposta = await fetch('https://seu-backend-na-render.onrender.com/compilar', {
+    const resposta = await fetch('https://github.com/GMW512/pascalzim-backend.git', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
